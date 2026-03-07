@@ -1,1 +1,29 @@
 Новикова Марина
+
+
+#include <stdio.h>                                       
+#include <stdlib.h>                                      
+#include <math.h>                                        
+#include <iostream>                                      
+using namespace ::std;                                   
+
+
+
+int main()
+{
+	int k = 0,kolv=0; 
+
+	system("chcp 1251");
+	
+	char txt[][15] = { "hello","big","cute","boy",",","little","brother"};
+	
+	for (int k=0;k<7;k++)
+	{
+		cout<<txt[k]<<" ";
+
+		if (txt[k][0] == 'b') kolv++;
+	}
+	cout << endl;
+	cout <<"Количество слов, начинающихся на b: "<<kolv<< endl;
+	return 0;
+}
